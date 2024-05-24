@@ -1,0 +1,312 @@
+
+  /*BODY*/
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #341959;
+    width: 100%;
+    max-width: 100%;
+    height: 940px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+  
+  /*CARDS2*/
+  
+  .card {
+    display: flex;
+    flex-direction: row; /* Cambiado a fila para todos los dispositivos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: center;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    margin: 50px;
+  }
+  .card-img-container {
+    margin: 5px;
+    display: flex;
+    flex-direction: column; /* Organiza la imagen y el h1 en columna */
+    align-items: center; /* Centra la imagen y el h1 horizontalmente */
+    justify-content: center; /* Centra la imagen y el h1 verticalmente */
+    width: auto;
+    flex: 0.8; /* La imagen y el h1 ocupan el espacio disponible */
+  }
+  .card-img-container img {
+    width: 50%;
+    padding-top: 1rem;
+  }
+  .card-body-container {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column; /* Organiza el h1 y el párrafo en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    flex: 3; /* El texto ocupa el doble del espacio que la imagen y el h1 */
+    margin: 0 60px; /* Ajusta el margen a la derecha */
+    color: #341959;
+    font-weight: bold;
+    font-size: 19px;  
+    letter-spacing: 1px;
+  }
+  .card-title {
+    display: flex;
+    padding-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0; /* Elimina el margen superior */
+    color: #2793f2;
+  }
+  
+  @media screen and (min-width: 768px) {
+  }
+  /* Los estilos para dispositivos más grandes se mantienen igual */
+  
+  /*FINAL CARDS*/
+  
+  
+  /*LISTAS*/
+  .list-container {
+    margin: 50px;
+    color: white;
+  }
+  
+  .list-title {
+    font-size: 24px;
+  }
+  
+  .custom-list {
+    list-style: none;
+    padding-left: 0;
+    display: block;
+  }
+  
+  .custom-list li {
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%; /* Añade esto para que cada elemento ocupe todo el ancho disponible */
+    display: block; /* Cambiar a bloque para que aparezcan uno debajo del otro */
+  }
+  
+  .custom-list li:before {
+    content: ">";
+    margin-right: 5px;
+    display: inline-block; /* Mantener el símbolo ">" en línea con el texto */
+  }
+  /*FINAL LISTAS*/
+  
+  /*BOTON*/
+  .adquirir-curso {
+    background-color: #2793f2; /* Celeste */
+    color: white; /* Letras blancas */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 18px 60px; /* Espaciado interno */
+    font-size: 24px; /* Tamaño de fuente */
+    font-family: Poppins, sans-serif;
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+    display: block; /* Para centrar horizontalmente */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    margin-bottom: 50px;
+  }
+  
+  .adquirir-curso:hover {
+    background-color: #0511f2; /* Cambio de color al pasar por encima */
+  }
+  
+  /*FINAL BOTON*/
+  
+  /*CAROUSEL*/
+  .sec-carousel {
+    background-color: #f20cb5;
+  }
+  .container {
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  .carousel-title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+  }
+
+  .container .main-card {
+    display: flex;
+    justify-content: right; /* Centra las tarjetas horizontalmente */
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card {
+    margin-left: -100%;
+  }
+  .container .main-card .cards {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas dentro de cada grupo */
+    width: 100%;
+    gap: 10px; /* Espacio entre las tarjetas */
+  }
+  .main-card .cards .card {
+    width: calc(100% / 3 - 20px); /* Ajuste de ancho para 3 tarjetas */
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    position: relative;
+  }
+  .main-card .cards .card:hover {
+    transform: translateY(-15px);
+  }
+  .cards .card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card .content .img img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .card .content .name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ca38f2;
+    margin-bottom: 50px;
+  }
+  .card .content .media-icons {
+    margin-top: 10px;
+    display: flex;
+  }
+  .media-icons a {
+    text-align: center;
+    line-height: 33px;
+    height: 35px;
+    width: 35px;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #FF676D;
+    transition: all 0.3s ease;
+  }
+  .media-icons a:hover {
+    color: #FF676D;
+    background-color: #fff;
+    border-color: #FF676D;
+  }
+  .container .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+ .masInfo {
+    background-color: #d9d9d9;
+    color: #f20cb5; /* Letras */
+    border: 0; 
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 5px 20px; /* Espaciado interno */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block; /* Para centrar horizontalmente */
+    /*margin: 0 auto; /* Para centrar horizontalmente */
+    margin-bottom: 18px;
+    margin-right: 18px;
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a button:hover{
+    background-color:#ca38f259;
+    color:white;
+    cursor: pointer;
+  }
+
+  .button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .button label.active {
+    width: 35px;
+  }
+  #one:checked ~ .button .one {
+    width: 35px;
+  }
+  #one:checked ~ .button .two {
+    width: 15px;
+  }
+  #two:checked ~ .button .one {
+    width: 15px;
+  }
+  #two:checked ~ .button .two {
+    width: 35px;
+  }
+
+
+
+  input[type="radio"] {
+    display: none;
+  }
+  .view-all-courses-inicio {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+    text-align: right; /* Alinea el texto a la izquierda */
+    text-decoration: none;
+    padding: 10px 0;
+  }
+
+  .view-all-courses-inicios:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .main-card .cards .card {
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .main-card .cards {
+      flex-wrap: wrap;
+    }
+    .main-card .cards .card {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+  
+
+  
+ 

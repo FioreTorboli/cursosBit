@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CA38F2;
+    width: 100%;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+}
+
+.inicio h1{
+    display: flex;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+}
+
+.inicio p{
+    display: flex;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: left;
+    letter-spacing: 5px;
+    margin-left: 90px;
+}
+
+
+.container-search{
+    position: relative;
+    float: left;
+    margin-left: 46em;
+    margin-top: -215px;
+    outline-color: #3319582a;
+    outline-style: solid;
+}
+
+input{
+    padding: 35px 30px 35px 20px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+    background-color: white;
+    width: 24em;
+    height: 32px;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    color: #331958;
+    font-weight: 500;
+}
+
+::placeholder{
+    color: #331958b2;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    letter-spacing: 2px;
+    
+}
+
+.container-search button{
+    color: #331958;
+    background-color:#D9D9D9;
+    height: 68px;
+    width: 90px;
+    padding: 10px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 15px 15px 0;
+}
+
+i{
+    font-size: 30px;
+}
+
+.container-search button:hover{
+    background-color: #33195862;
+    cursor: pointer;
+    color: #D9D9D9;
+}
+
+.masbuscados{
+    display: flex;
+    justify-content: center;
+}
+
+.masbuscados img{
+    width: 50em;
+    margin-top:25em;
+    margin-bottom: 15px;
+}
+
+/*breakpoints body*/
+
+@media (max-width: 1204px){
+
+    .container-search{
+        margin-left: 5em;
+        margin-top: 240px;
+    }
+
+    .masbuscados img{
+        width: 30em;
+        margin-left: -35em;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 700px){
+
+    .inicio h1{
+        margin-left: 1em;
+    }
+
+    .inicio p{
+        margin-left: 1.5em;
+    }
+
+    .container-search{
+        margin-left: 3em;
+    }
+
+    input{
+        width: 18em;
+    }
+
+    ::placeholder{
+        font-size: 13px;
+    }
+
+    .masbuscados img{
+        width: 20em;
+        margin-left: -25em;
+        margin-top: 25em;
+        margin-bottom: -2rem;
+    }
+}
+
+
+
+  .container {
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+
+  .carousel-title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+  }
+
+  .container .main-card {
+    display: flex;
+    justify-content: right; /* Centra las tarjetas horizontalmente */
+    width: 200%;
+    transition: 1s;
+    font-family: poppins, sans-serif;
+  }
+  #two:checked ~ .main-card {
+    margin-left: -100%;
+  }
+  .container .main-card .cards {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas dentro de cada grupo */
+    width: 100%;
+    gap: 10px; /* Espacio entre las tarjetas */
+  }
+  .main-card .cards .card {
+    width: calc(100% / 3 - 20px); /* Ajuste de ancho para 3 tarjetas */
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    position: relative;
+  }
+  .main-card .cards .card:hover {
+    transform: translateY(-15px);
+  }
+  .cards .card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card .content .img img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #java{
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .card .content .name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ca38f2;
+    margin-bottom: 50px;
+  }
+  .card .content .media-icons {
+    margin-top: 10px;
+    display: flex;
+  }
+  .media-icons a {
+    text-align: center;
+    line-height: 33px;
+    height: 35px;
+    width: 35px;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #FF676D;
+    transition: all 0.3s ease;
+  }
+  .media-icons a:hover {
+    color: #FF676D;
+    background-color: #fff;
+    border-color: #FF676D;
+  }
+  .container .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+ .masInfo {
+    background-color: #d9d9d9;
+    color: #f20cb5; /* Letras */
+    border: 0; 
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 5px 20px; /* Espaciado interno */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block; /* Para centrar horizontalmente */
+    /*margin: 0 auto; /* Para centrar horizontalmente */
+    margin-bottom: 18px;
+    margin-right: 18px;
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  a button:hover{
+    background-color:#ca38f259;
+    color:white;
+    cursor: pointer;
+  }
+
+  .button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  #one{
+    display: none;
+  }
+  #two{
+    display: none;
+  }
+
+  .button label.active {
+    width: 35px;
+  }
+  #one:checked ~ .button .one {
+    width: 35px;
+  }
+  #one:checked ~ .button .two {
+    width: 15px;
+  }
+  #two:checked ~ .button .one {
+    width: 15px;
+  }
+  #two:checked ~ .button .two {
+    width: 35px;
+  }
+
+  @media (max-width: 768px) {
+    .main-card .cards .card {
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .main-card .cards {
+      flex-wrap: wrap;
+      margin: 50px 50px;
+
+    }
+    .main-card .cards .card {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+
+
+
+
